@@ -1,0 +1,132 @@
+<nav
+  class="hidden lg:inline-block md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden bg-white flex-wrap items-center justify-between relative md:w-56 z-10 border shadow-sm border-white py-4 px-6"
+>
+  <div
+    class="md:flex-col md:items-stretch md:min-h-full md:flex-nowrap px-0 flex flex-wrap items-center justify-between w-full mx-auto"
+  >
+    <div
+      class="md:flex flex-row text-left md:pb-2 pb-3 mr-0 text-sm font-serif px-6 space-x-2 shrink-0"
+    >
+      <a
+        [routerLink]="['/']"
+        class="flex text-center items-center justify-center font-semibold text-xl"
+      >
+        Mon Etab
+      </a>
+    </div>
+
+    <!-- Brand -->
+
+  
+    <!-- Collapse -->
+    <div
+      class="md:flex md:flex-col md:items-stretch md:opacity-100 md:relative md:mt-4 md:shadow-none shadow absolute top-0 left-0 right-0 z-40 overflow-y-auto overflow-x-hidden h-auto items-center flex-1 rounded"
+    >
+      <!-- Collapse header -->
+      <div
+        class="md:min-w-full md:hidden block pb-4 mb-4 border-b border-solid border-blueGray-200"
+      >
+        <div class="flex flex-wrap">
+          <div class="w-6/12">
+            <a
+              class="md:block text-left md:pb-2 text-blueGray-600 mr-0 inline-block whitespace-nowrap text-sm font-bold p-4 px-0"
+            >
+              Notus Angular
+            </a>
+          </div>
+          <div class="w-6/12 flex justify-end">
+            <button
+              type="button"
+              class="cursor-pointer text-black opacity-50 md:hidden px-3 py-1 text-xl leading-none bg-transparent rounded border border-solid border-transparent"
+            >
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Form -->
+      <form class="mt-6 mb-4 md:hidden">
+        <div class="mb-3 pt-0">
+          <input
+            type="text"
+            placeholder="Search"
+            class="border-0 px-3 py-2 h-12 border-solid border-blueGray-500 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-base leading-snug shadow-none outline-none focus:outline-none w-full font-normal"
+          />
+        </div>
+      </form>
+
+      <!-- Divider -->
+      <hr class="my-4 md:min-w-full" />
+      <!-- Heading -->
+
+      <!-- Navigation -->
+
+      <!-- Heading -->
+      <a
+        routerLink="/dashboard"
+        [routerLinkActive]="['bg-red-400']"
+        class="md:min-w-full text-blueGray-500 px-2 rounded text-xs font-bold block pt-1 pb-4 no-underline cursor-pointer"
+      >
+        Tableau de borde
+      </a>
+
+      <!-- Divider -->
+      <!-- Navigation -->
+
+      <hr class="my-4 md:min-w-full" />
+      <!-- Heading -->
+
+      <a
+        routerLink="/dashboard/student"
+        [routerLinkActive]="['bg-red-400']"
+        class="md:min-w-full text-blueGray-500 px-2 rounded text-xs font-bold block pt-1 pb-4 no-underline cursor-pointer"
+      >
+        Elèves
+      </a>
+
+      <!-- Divider -->
+      <hr class="my-4 md:min-w-full" />
+      <!-- Heading -->
+    
+
+      <a
+        routerLink="/dashboard/teacher"
+        [routerLinkActive]="['bg-red-400']"
+        class="md:min-w-full text-blueGray-500 px-2 rounded text-xs font-bold block pt-1 pb-4 no-underline cursor-pointer"
+      >
+        Professeurs
+      </a>
+
+      <hr class="my-4 md:min-w-full" />
+      <!-- Heading -->
+
+      <a
+        routerLink="/dashboard/user"
+        [routerLinkActive]="['bg-red-400']"
+        class="md:min-w-full text-blueGray-500 px-2 rounded text-xs font-bold block pt-1 pb-4 no-underline cursor-pointer"
+      >
+        Utilsateurs
+      </a>
+
+      <hr class="my-4 md:min-w-full" />
+      <!-- Heading -->
+
+      <a
+        routerLink="/dashboard/rapport"
+        [routerLinkActive]="['bg-red-400']"
+        class="md:min-w-full text-blueGray-500 px-2 rounded text-xs font-bold block pt-1 pb-4 no-underline cursor-pointer"
+      >
+        Rapport
+      </a>
+
+      <div class="flex absolute bottom-0">
+        <a
+          routerLink="/auth/login"
+          class="md:min-w-full text-red-500 text-md font-bold block pt-1 pb-4 underline cursor-pointer"
+        >
+          Déconnecter
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

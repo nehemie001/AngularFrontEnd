@@ -1,0 +1,103 @@
+<div class="container mt-20 mx-auto w-2/3 flex flex-col bg-white">
+    <!-- style="
+      background-image: url('assets/img/multi-ethnic-tea.jpg');
+      background-size: cover;
+    " -->
+    <div
+      class="flex  md:flex-row  items-center bg-white justify-center rounded-xl shadow-2xl"
+    >
+      
+      <!-- Image section -->
+  
+      <!-- Login form section -->
+      <div
+        class="relative flex flex-col min-w-0 break-words w-full -mb-3 rounded-lg bg-white justify-center text-center"
+      >
+        <div class="flex-auto px-4 lg:px-10 py-10 pt-10 h-full mt-10">
+         
+  
+          <!-- Buttons Roles -->
+          <div class="flex flex-row w-full">
+            <div class="flex flex-row w-full justify-center space-x-3">
+              <p class="text-blue-600 text-2xl font-bold">Connexion</p>
+            </div>
+          </div>
+  
+          <!-- Form login -->
+          <form
+            [formGroup]="form"
+            (ngSubmit)="onSubmit()"
+            class="flex mx-4 md:mx-24 mt-10"
+          >
+            <div class="flex flex-col w-full space-y-6">
+              <!-- Email input -->
+              <div class="relative w-full mb-3">
+                <input
+                  id="username"
+                  formControlName="username"
+                  type="text"
+                  class="border border-blue-500 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded-md text-sm focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                  placeholder="username"
+                />
+              </div>
+  
+              <!-- Password input -->
+              <div class="relative w-full mb-3">
+                <input
+                  id="password"
+                  formControlName="password"
+                  type="password"
+                  class="border border-blue-500 px-3 py-3 placeholder-gray-500 text-gray-600 bg-white rounded-md text-sm focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                  placeholder="********"
+                />
+              </div>
+  
+              <!-- Remember me & Forgot password -->
+              <div class="flex justify-between">
+                <!-- <label class="inline-flex items-center cursor-pointer">
+                  <input
+                    id="customCheckLogin"
+                    type="checkbox"
+                    class="form-checkbox border-0 text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150 rounded"
+                  />
+                  <span class="ml-2 text-sm font-light text-blueGray-600"
+                    >Remember me</span
+                  >
+                </label> -->
+                <label
+                  class="inline-flex items-center underline text-sm text-blue-500 cursor-pointer"
+                >
+                  Mot de passe oublié ?
+                </label>
+              </div>
+              <!-- Submit button -->
+              <div class="text-center flex mt-10">
+                <button
+                  class="bg-blue-500 text-white active:bg-blue-300 hover:bg-slate-400 text-sm font-bold uppercase px-6 py-3 rounded-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
+                  type="submit"
+                >
+                  Se connecter
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- End Form login -->
+          <div class="flex">
+            <div class="flex w-full justify-center items-center">
+              <span class="text-gray-700 text-center text-xs font-light">
+                Vous n'avez pas de compte?
+              </span>
+  
+              <a
+                [routerLink]="['/auth/register']"
+                class="flex items-center justify-center text-sm font-light text-blue-500 hover:text-blue-600 underline"
+              >
+                Créer un compte
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

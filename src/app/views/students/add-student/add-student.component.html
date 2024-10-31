@@ -1,0 +1,113 @@
+<div [className]="['flex flex-row h-screen -ml-0 md:-ml-8 bg-slate-200']">
+    <app-layouts></app-layouts>
+    <div
+      [className]="[
+        'flex flex-col w-full md:w-full md:h-full h-full py-12 xl:mb-0 bg-slate-200 '
+      ]"
+    >
+  
+      <div class="w-full  xl:mb-0 px-4 mx-auto">
+        <div class="relative flex flex-col min-w-0 break-words w-full ">
+          <div class="bg-white p-8 rounded shadow-md max-w-md w-full mx-auto">
+            <h2 class="text-2xl font-semibold mb-4">Ajouter un eleve</h2>
+  
+            <form [formGroup]="form">
+              <!-- Nom et Prénom -->
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label
+                    for="firstName"
+                    class="block text-sm font-medium text-gray-700"
+                    >Prénom</label
+                  >
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="mt-1 p-2 w-full border rounded-md"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="lastName"
+                    class="block text-sm font-medium text-gray-700"
+                    >Nom</label
+                  >
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="mt-1 p-2 w-full border rounded-md"
+                  />
+                </div>
+              </div>
+  
+              <!-- Adresse email -->
+              <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-gray-700"
+                  >Matricule</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="mt-1 p-2 w-full border rounded-md"
+                />
+              </div>
+              <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-gray-700"
+                  >Date de naissance</label
+                >
+                <input
+                  type="date"
+                  id="email"
+                  name="email"
+                  class="mt-1 p-2 w-full border rounded-md"
+                />
+              </div>
+              <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-gray-700"
+                  >Classe</label
+                >
+               <select name="" id="" class="w-full border-2 py-2">
+                <option value="">6eme</option>
+                <option value="">5eme</option>
+               </select>
+              </div>
+             <div class="flex flex-row space-x-3">
+              <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-gray-700"
+                  >Telephone</label
+                >
+                <input
+                  type="text"
+                  class="mt-1 p-2 w-full border rounded-md"
+                />
+              </div>
+              <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-gray-700"
+                  >Ville</label
+                >
+                <input
+                  type="text"
+                  class="mt-1 p-2 w-full border rounded-md"
+                />
+              </div>
+             </div>
+  
+              <!-- Bouton d'inscription -->
+              <div class="mt-6">
+                <button
+                  type="submit"
+                  class="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                >
+                  S'inscrire
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

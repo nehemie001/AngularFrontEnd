@@ -1,0 +1,109 @@
+<div [className]="['flex flex-row h-screen -ml-0 md:-ml-8 bg-slate-200']">
+    <app-layouts></app-layouts>
+    <div
+      [className]="[
+        'flex flex-col w-full md:w-full md:h-full h-full py-12 xl:mb-0 bg-slate-200 mt-12'
+      ]"
+    >
+      <div [className]="['mx-4 font-bold text-xl text-gray-500']">Utilisateur</div>
+  
+      <div class="w-full mb-12 xl:mb-0 px-4 mx-auto mt-10">
+        <div
+          class="relative flex flex-col  min-w-0 break-words bg-white w-[66rem] mb-6 shadow-md rounded"
+        >
+          <div class="rounded-t mb-0 px-4 py-3 border-0">
+            <div class="flex flex-wrap items-center">
+              <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                <span class="font-bold text-base text-blue-700"> Listes </span>
+              </div>
+              <div
+                [className]="[
+                  'relative w-full px-4 space-x-2 max-w-full flex-grow flex-1 text-right'
+                ]"
+              >
+                <button
+                  (click)="goToEdit()"
+                  [className]="[
+                    'bg-blue-500 px-2 py-1 rounded cursor-pointer text-white shadow-md'
+                  ]"
+                >
+                  Nouveau utilisateur
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div [className]="['block w-full overflow-x-auto']">
+            <table
+              [className]="['items-center bg-transparent w-full border-collapse']"
+            >
+              <thead>
+                <tr>
+                  <th
+                    [className]="[
+                      'px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center'
+                    ]"
+                  >
+                    ID
+                  </th>
+                  <th
+                    [className]="[
+                      'px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center'
+                    ]"
+                  >
+                    Pseudo
+                  </th>
+                  <th
+                    class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center"
+                  >
+                    Date de creation
+                  </th>
+                 
+  
+                  <th
+                    class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-center"
+                  >
+                    Actions
+                  </th>
+                </tr>
+              </thead>
+  
+              <tbody>
+                <tr>
+                  <th
+                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                  >
+                    1
+                  </th>
+  
+                  <th
+                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left text-blueGray-700"
+                  >
+                   Pédahel
+                  </th>
+                  <td
+                    class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4"
+                  >
+                    12/12/2000
+                  </td>
+                 
+  
+                  <td
+                    class="border-t-0 space-x-2 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-center"
+                  >
+                    <button class="bg-green-500 p-1 text-white rounded-sm">
+                      Approuver
+                    </button>
+                    <button class="bg-red-500 p-1 text-white rounded-sm">
+                      Supprimer
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
